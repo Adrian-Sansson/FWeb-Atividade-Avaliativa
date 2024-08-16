@@ -1,0 +1,19 @@
+.centralizar{
+    padding-top: 450px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(200px + -50vmin);
+}
+
+#contador{
+    margin: 50px;
+    width: 100%;
+    height: 35px;
+    max-width: 100px;
+    border: 2px solid rgb(51, 255, 0);
+    border-radius: 60px;
+    box-shadow: -3px 2px 0 rgb(12, 119, 27); 
+    border-bottom-style: groove;
+}
