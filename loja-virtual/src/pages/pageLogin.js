@@ -1,5 +1,5 @@
-import {useState , useMemo} from "react";
-import {Link} from 'react-router-dom';
+import { useState, useMemo } from "react";
+import { Link } from 'react-router-dom';
 import './pageLogin.css';
 
 function Cadastro() {
@@ -21,25 +21,27 @@ function Cadastro() {
         setMensagem(`${password}`)
     };
     return (
-        <div className="digitar">
-            <form onSubmit={clickEnter}>
-                <input 
-                    type="text"
-                    value={name}
-                    placeholder="Digite seu E-mail:"
-                    onChange={mudaName}
-                />
-            </form>
-            <form onSubmit={clickEnter1}>
-                <input 
-                    type="text"
-                    value={password}
-                    placeholder="Digite sua senha:"
-                    onChange={mudaSenha}
-                />
-            </form>
-            {<p>{mensagem}</p>}
-            <button id="botao" type="submit"><Link to='/Itens'> Logar </Link></button>
+        <div className="container">
+            <div className="digitar">
+                <form onSubmit={clickEnter}>
+                    <input id="textOne"
+                        type="text"
+                        value={name}
+                        placeholder="Digite seu e-mail:"
+                        onChange={mudaName}
+                    />
+                </form>
+                <form onSubmit={clickEnter1}>
+                    <input id="textTwo"
+                        type="text"
+                        value={password}
+                        placeholder="Digite sua senha:"
+                        onChange={mudaSenha}
+                    />
+                </form>
+                {<p>{mensagem}</p>}
+                <button id="botao" type="submit"><Link to='/Itens'> Logar </Link></button>
+            </div>
         </div>
     );
 }

@@ -1,14 +1,22 @@
-.centralizar{
-    padding-top: 450px;
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../components/loja.png);
+}
+
+.arrumar{
+    border-radius: 290px;
+    padding: 312px;
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(200px + -50vmin);
+    background-image: url(../components/loja.png);
+    box-shadow: 10px 10px 10px black;
 }
 
-#contador{
-    margin: 50px;
+#botaoTree{
+    margin: 40px;
     width: 100%;
     height: 35px;
     max-width: 100px;
@@ -16,4 +24,24 @@
     border-radius: 60px;
     box-shadow: -3px 2px 0 rgb(12, 119, 27); 
     border-bottom-style: groove;
+}
+
+#botaoOne{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2px;
+    background-color: aliceblue;
+}
+
+#botaoTwo{
+    border: 2px solid rgb(51, 255, 0);
+    border-radius: 60px;
+    box-shadow: -3px 2px 0 rgb(12, 119, 27); 
+    border-bottom-style: groove;
+}
+
+.coisas{
+    text-align: center;
+    margin-top: 10px;
 }
