@@ -1,47 +1,66 @@
 .container{
     width: 100vw;
-    height: 100vh;
-    background-image: url(../components/loja.png);
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: white;
 }
 
 .arrumar{
-    border-radius: 290px;
-    padding: 312px;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../components/loja.png);
-    box-shadow: 10px 10px 10px black;
-}
-
-#botaoTree{
-    margin: 40px;
-    width: 100%;
-    height: 35px;
-    max-width: 100px;
-    border: 2px solid rgb(51, 255, 0);
-    border-radius: 60px;
-    box-shadow: -3px 2px 0 rgb(12, 119, 27); 
-    border-bottom-style: groove;
-}
-
-#botaoOne{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 2px;
-    background-color: aliceblue;
-}
-
-#botaoTwo{
-    border: 2px solid rgb(51, 255, 0);
-    border-radius: 60px;
-    box-shadow: -3px 2px 0 rgb(12, 119, 27); 
-    border-bottom-style: groove;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .coisas{
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#input{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    padding: 10px;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+    color: gray;
+}
+
+li:last-child{
+    border-bottom: none;
+}
+
+#botao{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    color: white;
+    transition: background-color 0.3s ease;
     text-align: center;
-    margin-top: 10px;
 }

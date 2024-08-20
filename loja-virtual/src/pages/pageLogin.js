@@ -40,7 +40,7 @@ function Cadastro() {
                     />
                 </form>
                 {<p>{mensagem}</p>}
-                <button id="botao" type="submit"><Link to='/Itens'> Logar </Link></button>
+                <button id="botao" type="submit"><Link to='/Produtos'> Logar </Link></button>
             </div>
         </div>
     );

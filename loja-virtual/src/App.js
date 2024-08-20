@@ -1,14 +1,16 @@
 import './App.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Cadastro from './pages/pageLogin';
-import Itens from './pages/pagePrincipal';
+import Produtos from './pages/pagePrincipal';
+import Carrinho from './pages/pageProdutos';
 
 function App() {
   return (
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Cadastro/>}/>
-      <Route path='/Itens' element={<Itens/>}/>
+      <Route path='/Produtos' element={<Produtos/>}/>
+      <Route path='/Carrinho' element={<Carrinho/>}/>
     </Routes>
     </BrowserRouter>
   );
